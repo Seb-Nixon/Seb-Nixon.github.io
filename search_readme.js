@@ -11,7 +11,7 @@ async function search(){
 	});
 	
 	for await (const line of inputlines){
-		return line;
+		console.log(`Line from file: ${line}`);
 	}
 }
 
