@@ -1,4 +1,3 @@
-<script>
 const fs = require('fs');
 const readline = require('readline');
 
@@ -14,5 +13,3 @@ async function search(){
 		console.log(`Line from file: ${line}`);
 	}
 }
-
-</script>
