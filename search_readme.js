@@ -31,7 +31,7 @@ async function search(word){
 			document.getElementById("notInOrg").style.visibility = "hidden";
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
-			document.getElementsById("login").innerHTML = "Github username: " + person.user.login.link(hypLink);
+			document.getElementById("login").innerHTML = "Github username: " + person.user.login.link(hypLink);
 			
 			
 			console.log("Found: " + word);
