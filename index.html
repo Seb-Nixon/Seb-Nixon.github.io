@@ -10,10 +10,10 @@
 <h1>Search for person in Repository</h1>
 
 <form>
-Type in nameid, username, or login: <input type="string" name = "search for..." id = "searchBox"><br>
-<input type="button" value="Search" onclick="search(document.getElementById('searchBox').value)"/> 
+Type in b number or username: <input type="string" id = "searchBox"><br>
+<input type="button" id="btn" onclick="search(document.getElementById('searchBox').value)"/> 
 </form> 
-<div id = "searchResults">
+<div id = "searchResults" style = "display: none">
 	<p id="nameid">University email:</p>
 	<p id="username">B number:</p>
 	<p id="login">Github username:</p>
@@ -26,6 +26,16 @@ Type in nameid, username, or login: <input type="string" name = "search for..." 
 		<li>Reason 2</li>
 	</ul>
 </div>
+
+<script>
+	var input = document.getElementById("searchBox");
+	input.addEventListener("keyup", function(event) {
+	  if (event.keyCode === 13) {
+	   event.preventDefault();
+	   document.getElementById("btn").click();
+	  }
+	});
+</script>
 
 </body>
 </html>

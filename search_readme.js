@@ -31,6 +31,7 @@ async function search(word){
 			var hypLink = "https://github.com/" + person.user.login;
 			var username =  person.scimIdentity.username.replace('@newcastle.ac.uk','');
 			
+			//Add all search results to the corresponding places.
 			document.getElementById("notInOrg").style.display = "none";
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + username;
@@ -41,6 +42,7 @@ async function search(word){
 		}
 	}
 	
+	//If no person is found hide the searchResults div and reveal teh notInOrg div to show possible reasons.
 	if (!found){
 		document.getElementById("searchResults").style.display = "none";
 		document.getElementById("notInOrg").style.display = "block";
