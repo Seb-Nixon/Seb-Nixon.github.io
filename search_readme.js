@@ -24,9 +24,9 @@ async function search(word){
 	edges = parseData.data.organization.samlIdentityProvider.externalIdentities.edges;
 	for (var i = 0; i < edges.length; i++){
 		var person = edges[i].node;
-		if (person.samlIdentity.nameId == searchWord ||
-			person.scimIdentity.username == searchWord ||
-			person.user.login == word){
+		if (person.samlIdentity != null && person.samlIdentity.nameId == searchWord ||
+			person.scimIdentity != null && person.scimIdentity.username == searchWord ||
+			person.user != null && person.user.login == word){
 				
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
@@ -37,6 +37,6 @@ async function search(word){
 	}
 	
 	document.getElementById("nameid").innerHTML = word + " not inside organization";
-    document.getElementById("username").innerHTML = "";
+	document.getElementById("username").innerHTML = "";
 	document.getElementById("login").innerHTML = "";
 }
