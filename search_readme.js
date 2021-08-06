@@ -22,7 +22,7 @@ async function search(word){
 		
 	}
 	if (!found){
-		console.log("Person not found");
+		console.log(word + " not found");
 		document.getElementById("nameid").innerHTML = "";
 		document.getElementById("username").innerHTML = "";
 		document.getElementById("login").innerHTML = "";
