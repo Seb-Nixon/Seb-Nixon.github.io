@@ -19,6 +19,8 @@ async function search(word){
 	const names = await response.json();
 	const parseData = names;
 	edges = parseData.data.organization.samlIdentityProvider.externalIdentities.edges;
+	
+	//For each person object in the organisation.
 	for (var i = 0; i < edges.length; i++){
 		var person = edges[i].node;
 		if ((person.samlIdentity != null && person.samlIdentity.nameId == searchWord) ||
@@ -32,14 +34,14 @@ async function search(word){
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
 			document.getElementById("login").innerHTML = "Github username: " + person.user.login.link(hypLink);
-			
-			
+			document.getElementById("searchResults").style.visibility = "visible";
 			console.log("Found: " + word);
 			break;
 		}
 	}
 	
 	if (!found){
+		document.getElementById("searchResults").style.visibility = "hidden";
 		document.getElementById("notInOrg").style.visibility = "visible"
 	}
 	
