@@ -17,5 +17,6 @@ async function search(){
 		}
 		
 	}
-	
+	console.log("Person not found");
+	return "Person not found";
 }
