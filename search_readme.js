@@ -29,7 +29,7 @@ async function search(word){
 			document.getElementById("notInOrg").style.visibility = "hidden"
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
-			document.getElementById("login").innerHTML = "Github username: " + person.user.login;
+			document.getElementById("login").innerHTML = "Github username: " + <a href = "https://github.com/" + person.user.login>person.user.login;
 			console.log("Found: " + word);
 			break;
 		}
