@@ -1,8 +1,6 @@
 
 
-async function search(){
-	
-	const word = "Ralph.Luke@newcastle.ac.uk"
+async function search(word){
 	var found = false;
 	
 	const response = await fetch('README.md');

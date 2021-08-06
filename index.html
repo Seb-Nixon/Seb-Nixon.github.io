@@ -13,7 +13,8 @@
 
 
 <form>
-<input type="button" value="click" onclick="search()"/> 
+Type in nameid, username, or login: <input type="string" name = "search for..." id = "searchBox"><br>
+<input type="button" value="Search" onclick="search(document.getElementById('searchBox'))"/> 
 </form> 
 
 <p id="nameid">Name:</p>
