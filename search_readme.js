@@ -17,9 +17,9 @@ async function search(){
 			}
 			
 			
-			document.getElementById("nameid").innerHTML = "Name: " + nameArr[0].split("\"")[2];
-			document.getElementById("username").innerHTML = "Username: " + nameArr[1].split("\"")[2];
-			document.getElementById("login").innerHTML = "Login: " + nameArr[2].split("\"")[2];
+			document.getElementById("nameid").innerHTML = "Name: " + nameArr[0].split("\"")[3];
+			document.getElementById("username").innerHTML = "Username: " + nameArr[1].split("\"")[3];
+			document.getElementById("login").innerHTML = "Login: " + nameArr[2].split("\"")[3];
 		}
 		
 	}
