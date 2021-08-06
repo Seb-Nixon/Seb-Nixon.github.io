@@ -29,10 +29,11 @@ async function search(word){
 			
 			found = true;
 			var hypLink = "https://github.com/" + person.user.login;
+			var username =  person.scimIdentity.username.replace('@newcastle.ac.uk','');
 			
 			document.getElementById("notInOrg").style.display = "none";
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
-			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
+			document.getElementById("username").innerHTML = "B number: " + username;
 			document.getElementById("login").innerHTML = "Github username: " + person.user.login.link(hypLink);
 			document.getElementById("searchResults").style.display = "block";
 			console.log("Found: " + word);
