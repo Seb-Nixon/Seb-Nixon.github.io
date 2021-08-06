@@ -13,7 +13,10 @@ async function search(word){
 	const response = await fetch('JSON/names.json');
 	const names = await response.json();
 	const parseData = names;
-	console.log(parseData.data.organization.samlIdentityProvider.externalIdentities.edges);
+	edges = parseData.data.organization.samlIdentityProvider.externalIdentities.edges;
+	for (var obj : edges){
+		console.log(obj.node.samlIdentity.nameId);
+	}
 	/*
 	//Split the text into each persons name username and login.
 	const textSplit = text.split("\n\n");
