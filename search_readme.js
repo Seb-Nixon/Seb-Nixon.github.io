@@ -14,7 +14,7 @@ async function search(word){
 		searchWord = word + "@newcastle.ac.uk"
 	}
 	
-	//Read the 'README.md' file and get the text.
+	//Read the 'names.json' file and get the text.
 	const response = await fetch('JSON/names.json');
 	const names = await response.json();
 	const parseData = names;
@@ -31,7 +31,9 @@ async function search(word){
 			document.getElementById("notInOrg").style.visibility = "hidden";
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
-			document.getElementById("login").innerHTML = "Github username: " + '<a href = "'hypLink'">' + person.user.login + '</a>';
+			document.getElementsById("login").innerHTML = "Github username: " + person.user.login.link(hypLink);
+			
+			
 			console.log("Found: " + word);
 			break;
 		}
