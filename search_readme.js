@@ -12,7 +12,7 @@ async function search(word){
 	//Read the 'README.md' file and get the text.
 	const response = await fetch('JSON/names.json');
 	const json = await response.json();
-	console.log(json);
+	console.log(json.data);
 	/*
 	//Split the text into each persons name username and login.
 	const textSplit = text.split("\n\n");
