@@ -28,7 +28,7 @@ async function search(word){
 			found = true;
 			var hypLink = "https://github.com/" + person.user.login;
 			
-			document.getElementById("notInOrg").style.visibility = "hidden"
+			document.getElementById("notInOrg").style.visibility = "hidden";
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
 			document.getElementById("login").innerHTML = "Github username: " + '<a href = "'hypLink'">' + person.user.login + '</a>';
