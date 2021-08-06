@@ -14,7 +14,7 @@ async function search(word){
 	const names = await response.json();
 	const parseData = names;
 	edges = parseData.data.organization.samlIdentityProvider.externalIdentities.edges;
-	for (var obj : edges){
+	for (const obj in edges){
 		console.log(obj.node.samlIdentity.nameId);
 	}
 	/*
