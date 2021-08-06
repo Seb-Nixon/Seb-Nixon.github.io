@@ -10,9 +10,10 @@ async function search(word){
 	var login = "";
 	
 	//Read the 'README.md' file and get the text.
-	const response = await fetch('README.md');
-	const text = await response.text();
-	
+	const response = await fetch('JSON/names.json');
+	const json = await response.json();
+	console.log(json);
+	/*
 	//Split the text into each persons name username and login.
 	const textSplit = text.split("\n\n");
 	for(let i = 0; i < textSplit.length; i++){
@@ -30,6 +31,11 @@ async function search(word){
 		}
 		
 	}
+	
+	
+	
+	
+	
 	//If multiple people were found under the search word.
 	if (count > 1){
 		console.log("Multiple people found for " + word + ". Please refine search");
@@ -43,4 +49,5 @@ async function search(word){
 		document.getElementById("username").innerHTML = username;
 		document.getElementById("login").innerHTML = login;
 	}
+	*/
 }

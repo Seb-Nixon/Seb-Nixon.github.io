@@ -1,0 +1,307 @@
+{
+  "data": {
+    "organization": {
+      "samlIdentityProvider": {
+        "externalIdentities": {
+          "pageInfo": {
+            "endCursor": "redacted",
+            "startCursor": "redacted",
+            "hasNextPage": false
+          },
+          "edges": [
+            {
+              "cursor": "y2=A6pA9yOYG34OO=YVnAyHc",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Mary.Walter@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "m.walter273@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "mwalterfoo203"
+                }
+              }
+            },
+            {
+              "cursor": "Y=FncAOHwyZ9A3VyYO=pO42y",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Jackson.Steagell@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "j.steagell457@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "jsteagellbuzz532"
+                }
+              }
+            },
+            {
+              "cursor": "ZOyY=924AYO=OpAywJ3yHVcn",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Barbara.Davis@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "b.davis645@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "bdavisfizz609"
+                }
+              }
+            },
+            {
+              "cursor": "AgOAynOO=92yZHpY4cWVYy=3",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Ann.Hughes@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "a.hughes219@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "ahughesfizz423"
+                }
+              }
+            },
+            {
+              "cursor": "yOnyHpYA3AY=y=VEO259AOyc",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Ralph.Luke@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "r.luke523@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "rlukebuzz676"
+                }
+              }
+            },
+            {
+              "cursor": "H=EnDO93yyOVcwyspYOA2Yp=",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Barry.Wahba@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "b.wahba912@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "bwahbabar596"
+                }
+              }
+            },
+            {
+              "cursor": "HOOynY=c2A=V9DO3NLkyYpyA",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Robert.Sanders@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "r.sanders993@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "rsandersfizz739"
+                }
+              }
+            },
+            {
+              "cursor": "Yy2OpQyk3YA=HL=gODVynO9c",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Alan.Shafer@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "a.shafer502@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "ashaferbar754"
+                }
+              }
+            },
+            {
+              "cursor": "yOV9OLHn=A3O2NQDY=Y1yycp",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Tiffany.Cook@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": null
+                },
+                "user": {
+                  "login": "tcookbuzz497"
+                }
+              }
+            },
+            {
+              "cursor": "Oc_Hgpy92YOC=YQVyDn=y3OA",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Brandon.Cook@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "b.cook507@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "bcookfoo675"
+                }
+              }
+            },
+            {
+              "cursor": "HDyygVYnTy=AOwOO2=9Y3pVc",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "NZQ7G1hTdbPlIgQn0lrAAPez_u68dwTlRfWmQXIeNCA"
+                },
+                "scimIdentity": {
+                  "username": null
+                },
+                "user": {
+                  "login": "jkuhnkebuzz963"
+                }
+              }
+            },
+            {
+              "cursor": "V=YyHnDTwcV3Y9=yOp2AOyOy",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "xR8GwKBcd4mbadxqt7kFEV5EMGZokUEuj2cJJ3Ef4JO"
+                },
+                "scimIdentity": {
+                  "username": null
+                },
+                "user": {
+                  "login": "tdunaganfoo412"
+                }
+              }
+            },
+            {
+              "cursor": "y5c=yVyYnw92DHZOTOp=3AOY",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Bonita.Buck@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": null
+                },
+                "user": {
+                  "login": "bbuckfizz644"
+                }
+              }
+            },
+            {
+              "cursor": "yOAH9gXV3YO2yOyp=YWD=cnC",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Noble.Herod@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": null
+                },
+                "user": {
+                  "login": "nherodbar768"
+                }
+              }
+            },
+            {
+              "cursor": "3Yy2DYAcpO7OO==93nyAYyHV",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Charlotte.Steelman@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "c.steelman250@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "csteelmanfizz366"
+                }
+              }
+            },
+            {
+              "cursor": "7yOy3Ay=H2VcD=pgnYZXYO9O",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Stephanie.Matthews@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "s.matthews658@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "smatthewsbuzz766"
+                }
+              }
+            },
+            {
+              "cursor": "9YDNVOyAyYc3p2HO9Osyn=A=",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "qlwWkJMIEqfqVATE-bZ1tcFESpMOrRXBZfxJUVA2GBf"
+                },
+                "scimIdentity": {
+                  "username": "m.myles808@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "mmylesfizz352"
+                }
+              }
+            },
+            {
+              "cursor": "yVyY9cY=2Dy3nHOYpOws9=OA",
+              "node": {
+                "samlIdentity": {
+                  "nameId": null
+                },
+                "scimIdentity": {
+                  "username": "j.sloan474@newcastle.ac.uk"
+                },
+                "user": null
+              }
+            },
+            {
+              "cursor": "9AYOYyHVZc92O3npsy=ADyO=",
+              "node": {
+                "samlIdentity": {
+                  "nameId": null
+                },
+                "scimIdentity": {
+                  "username": "t.joseph631@newcastle.ac.uk"
+                },
+                "user": null
+              }
+            },
+            {
+              "cursor": "OEyYAOp32ADYH=V9=9ctyyOn",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "dAnPTQ5vzqRqwJ6BiRXQ5yYcUXpgaScAi7-uCV6M6re"
+                },
+                "scimIdentity": {
+                  "username": "s.trudeau978@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "strudeaubuzz154"
+                }
+              }
+            },
+            {
+              "cursor": "AcYO2yV3nH=y4G6OA=YyOAp9",
+              "node": {
+                "samlIdentity": {
+                  "nameId": "Frank.Smith@newcastle.ac.uk"
+                },
+                "scimIdentity": {
+                  "username": "f.smith629@newcastle.ac.uk"
+                },
+                "user": {
+                  "login": "fsmithbuzz753"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
