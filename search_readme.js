@@ -13,7 +13,7 @@ async function search(){
 			for(let j = 0; j < nameArr.length; j++){
 				console.log(nameArr[j]);
 			}
-			
+			return nameArr;
 		}
 		
 	}
