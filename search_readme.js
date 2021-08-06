@@ -2,6 +2,8 @@
 
 async function search(){
 	
-	fetch('README.md').then(response => response.text()).then(text => console.log(text))
+	const response = await fetch('README.md');
+	const text = await response.text();
+	console.log(text)
 	
 }
