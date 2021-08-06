@@ -30,19 +30,19 @@ async function search(word){
 			found = true;
 			var hypLink = "https://github.com/" + person.user.login;
 			
-			document.getElementById("notInOrg").style.visibility = "hidden";
+			document.getElementById("notInOrg").style.display = "none";
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
 			document.getElementById("login").innerHTML = "Github username: " + person.user.login.link(hypLink);
-			document.getElementById("searchResults").style.visibility = "visible";
+			document.getElementById("searchResults").style.display = "block";
 			console.log("Found: " + word);
 			break;
 		}
 	}
 	
 	if (!found){
-		document.getElementById("searchResults").style.visibility = "hidden";
-		document.getElementById("notInOrg").style.visibility = "visible"
+		document.getElementById("searchResults").style.display = "none";
+		document.getElementById("notInOrg").style.display = "block";
 	}
 	
 }
