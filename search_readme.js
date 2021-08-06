@@ -15,6 +15,7 @@ async function search(word){
 	const parseData = names;
 	edges = parseData.data.organization.samlIdentityProvider.externalIdentities.edges;
 	for (const obj in edges){
+		console.log(obj);
 		console.log(obj.node.samlIdentity.nameId);
 	}
 	/*
