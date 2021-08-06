@@ -15,12 +15,18 @@ async function search(){
 			for(let j = 0; j < nameArr.length; j++){
 				console.log(nameArr[j]);
 			}
-			document.getElementById("demo").innerHTML = nameArr;
+			
+			
+			document.getElementById("nameid").innerHTML = "Name: " + nameArr[0].split("\"")[2];
+			document.getElementById("username").innerHTML = "Username: " + nameArr[1].split("\"")[2];
+			document.getElementById("login").innerHTML = "Login: " + nameArr[2].split("\"")[2];
 		}
 		
 	}
 	if (!found){
 		console.log("Person not found");
-		document.getElementById("demo").innerHTML = "Person not found";
+		document.getElementById("nameid").innerHTML = "";
+		document.getElementById("username").innerHTML = "";
+		document.getElementById("login").innerHTML = "";
 	}
 }
