@@ -13,10 +13,10 @@ async function search(){
 			for(let j = 0; j < nameArr.length; j++){
 				console.log(nameArr[j]);
 			}
-			return await nameArr;
+			document.getElementById("demo").innerHTML = nameArr;
 		}
 		
 	}
 	console.log("Person not found");
-	return "Person not found";
+	document.getElementById("demo").innerHTML = "Person not found";
 }
