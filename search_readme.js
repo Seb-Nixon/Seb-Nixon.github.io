@@ -14,12 +14,8 @@ async function search(word){
 	const names = await response.json();
 	const parseData = names;
 	edges = parseData.data.organization.samlIdentityProvider.externalIdentities.edges;
-	for (const edge in edges){
-		for (const obj in edge){
-			console.log(obj);
-			console.log(obj.node.samlIdentity.nameId);
-		}
-		
+	for (var i = 0; i < edges.length; i++){
+		console.log(i.node)
 	}
 	/*
 	//Split the text into each persons name username and login.
