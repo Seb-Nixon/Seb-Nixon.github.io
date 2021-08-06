@@ -9,8 +9,8 @@ async function search(word){
 	for(let i = 0; i < textSplit.length; i++){
 		if (textSplit[i].includes(word)){
 			if (found){
-				console.log("Multiple people found for '" + word + "'. Please refine search");
-				document.getElementById("nameid").innerHTML = "Multiple people found for '" + word + "'. Please refine search";
+				console.log("Multiple people found for " + word + ". Please refine search");
+				document.getElementById("nameid").innerHTML = "Multiple people found for " + word + ". Please refine search";
 				document.getElementById("username").innerHTML = "";
 				document.getElementById("login").innerHTML = "";
 				break;
