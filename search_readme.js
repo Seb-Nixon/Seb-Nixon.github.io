@@ -1,13 +1,10 @@
 
 /**
- * Function to search through 'README.md' file, searching for a given name.
+ * Function to search through 'names.json' file, searching for a given name.
  * Once the person is found the nameid, username and login are presented to the user.
  */
 async function search(word){
-	var count = 0;
-	var nameid = word + " not found";
-	var username = "";
-	var login = "";
+	var found = false;
 	var searchWord = "";
 	
 	if (word.includes("@newcastle.ac.uk")){
@@ -36,9 +33,12 @@ async function search(word){
 		}
 	}
 	
-	document.getElementById("nameid").innerHTML = word + " not inside organization";
-	document.getElementById("nameid").style.color = "red";
-	document.getElementById("username").innerHTML = "";
-	document.getElementById("login").innerHTML = "";
-	console.log(word + " is not found in the organization");
+	if (!found){
+		document.getElementById("nameid").innerHTML = word + " not inside organization";
+		document.getElementById("nameid").style.color = "red";
+		document.getElementById("username").innerHTML = "";
+		document.getElementById("login").innerHTML = "";
+		console.log(word + " is not found in the organization");
+	}
+	
 }
