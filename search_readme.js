@@ -17,7 +17,7 @@ async function search(word){
 	const textSplit = text.split("\n\n");
 	for(let i = 0; i < textSplit.length; i++){
 		//If the person is found.
-		if (textSplit[i].includes(word)){
+		if (textSplit[i].toUpperCase().includes(word.toUpperCase())){
 			count = count + 1;
 			var nameArr = textSplit[i].split("\n")
 			
