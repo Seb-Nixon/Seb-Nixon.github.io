@@ -26,20 +26,17 @@ async function search(word){
 			(person.user != null && person.user.login == word)){
 			
 			found = true;
+			document.getElementById("notInOrg").style.visibility = "hidden"
 			document.getElementById("nameid").innerHTML = "University email: " + person.samlIdentity.nameId;
 			document.getElementById("username").innerHTML = "B number: " + person.scimIdentity.username;
 			document.getElementById("login").innerHTML = "Github username: " + person.user.login;
-			console.log("Found: " + edges[i].node.samlIdentity.nameId);
+			console.log("Found: " + word);
 			break;
 		}
 	}
 	
 	if (!found){
-		document.getElementById("nameid").innerHTML = word + " not inside organization";
-		document.getElementById("nameid").style.color = "red";
-		document.getElementById("username").innerHTML = "";
-		document.getElementById("login").innerHTML = "";
-		console.log(word + " is not found in the organization");
+		document.getElementById("notInOrg").style.visibility = "visible"
 	}
 	
 }

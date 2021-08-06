@@ -13,10 +13,19 @@
 Type in nameid, username, or login: <input type="string" name = "search for..." id = "searchBox"><br>
 <input type="button" value="Search" onclick="search(document.getElementById('searchBox').value)"/> 
 </form> 
+<div id = "searchResults">
+	<p id="nameid">University email:</p>
+	<p id="username">B number (b1111111):</p>
+	<p id="login">Github username:</p>
+</div>
 
-<p id="nameid">University email:</p>
-<p id="username">B number (b1111111):</p>
-<p id="login">Github username:</p>
+<div id = "notInOrg" visibility = hidden>
+	<p color = "red">They are not inside organization</p>
+	<ul>
+		<li>Reason 1</li>
+		<li>Reason 2</li>
+	</ul>
+</div>
 
 </body>
 </html>
