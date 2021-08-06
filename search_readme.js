@@ -13,7 +13,7 @@ async function search(word){
 				document.getElementById("nameid").innerHTML = "Multiple people found for '" + word + "'. Please refine search";
 				document.getElementById("username").innerHTML = "";
 				document.getElementById("login").innerHTML = "";
-				break
+				break;
 			}
 			
 			found = true;
