@@ -14,7 +14,7 @@ async function search(word){
 			count = count + 1;
 			var nameArr = textSplit[i].split("\n")
 			
-			console.log("found " + nameArr[0].split("\"")[3]);
+			console.log("Found " + nameArr[0].split("\"")[3]);
 			nameid = "Name: " + nameArr[0].split("\"")[3];
 			username = "Username: " + nameArr[1].split("\"")[3];
 			login = "Login: " + nameArr[2].split("\"")[3];
