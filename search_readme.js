@@ -2,7 +2,7 @@
 
 async function search(){
 	
-	const word = "Ralph.Luke@newcastle.ac.uk"
+	const word = "Ralsph.Luke@newcastle.ac.uk"
 	
 	const response = await fetch('README.md');
 	const text = await response.text();
