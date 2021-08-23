@@ -1,34 +1,79 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Cover Template · Bootstrap v5.1</title>
 
-<head>  
-<script type="text/javascript" src="search_org.js"></script>
-</head>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+    <script type="text/javascript" src="search_org.js"></script>
 
-<body>
+    
 
-<h1>Search for person in Organization</h1>
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<form>
-Type in b number or username to search: <input type="string" id = "searchBox"><br>
-<button type="button" onclick="search(document.getElementById('searchBox').value)">Search</button> 
-</form>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-<!-- What to display if the person is in the organization -->
-<div id = "searchResults" style = "display: none">
-	<p id="nameid">University email:</p>
-	<p id="username">B number:</p>
-	<p id="login">Github username:</p>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="text-sm-center mb-0">Newcastle University School of Computing Github</h3>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h1>Search for a person in the Organization.</h1>
+    <p class="lead">Type in b number or username to search: <input type="string" id = "searchBox"></p>
+    <p class="lead">
+      <button type="button" onclick="search(document.getElementById('searchBox').value)" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Search</button>
+    </p>
+    <!-- What to display if the person is in the organization -->
+    <div class="lead" id = "searchResults" >
+      <p id="nameid">University email:</p>
+      <p id="username">B number:</p>
+      <p id="login">Github username:</p>
+    </div>
+
+    <!-- What to display if the person is not in the organization -->
+    <div class="lead" id = "notInOrg" style = "display: none">
+      <p style = "color:red">They are not inside the organization</p>
+      <ul class="text-sm-center mb-0">
+        <li>Reason 1</li>
+        <li>Reason 2</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+  </footer>
 </div>
 
-<!-- What to display if the person is not in the organization -->
-<div id = "notInOrg" style = "display: none">
-	<p style = "color:red">They are not inside the organization</p>
-	<ul>
-		<li>Reason 1</li>
-		<li>Reason 2</li>
-	</ul>
-</div>
 
-</body>
+    
+  </body>
 </html>
